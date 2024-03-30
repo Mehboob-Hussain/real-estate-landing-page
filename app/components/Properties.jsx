@@ -1,4 +1,5 @@
 import { Box, Button, Container, TextField, Typography } from "@mui/material";
+import Image from "next/image";
 import React from "react";
 
 
@@ -83,7 +84,7 @@ const Properties = () => {
               }}
             >
               <Box sx={{ width: "100%" }}>
-                <img src={property.img} alt="housePhoto" style={{ maxWidth: "100%" }} />
+                <Image src={property.img} alt="housePhoto" style={{ maxWidth: "100%" }} />
               </Box>
 
               <Box sx={{ padding: "1rem" }}>
@@ -102,21 +103,21 @@ const Properties = () => {
                   }}
                 >
                   <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-                    <img src="/bedroomsIcon.png" alt="bedroomsIcon" />
+                    <Image src="/bedroomsIcon.png" alt="bedroomsIcon" />
                     <Typography variant="body2" sx={{ mt: 1 }}>
                       {property.bedrooms}
                     </Typography>
                   </Box>
 
                   <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-                    <img src="/bathroomsIcon.png" alt="bathroomssIcon" />
+                    <Image src="/bathroomsIcon.png" alt="bathroomssIcon" />
                     <Typography variant="body2" sx={{ mt: 1 }}>
                       {property.bathrooms}
                     </Typography>
                   </Box>
 
                   <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-                    <img src="/spaceIcon.png" alt="spaceIcon" />
+                    <Image src="/spaceIcon.png" alt="spaceIcon" />
                     <Typography variant="body2" sx={{ mt: 1 }}>
                       {property.space}
                     </Typography>
