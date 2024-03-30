@@ -14,7 +14,7 @@ const HeroSection = () => {
             <Typography variant='h5'>Residential & Office Spaces</Typography>
             <Typography variant='h2' sx={{ '@media (max-width: 768px)': { fontSize: '2rem' } }}>
             Discover a place  <br />
-            where you'll<br />
+            where you&apos;ll<br />
             love to live
             </Typography>
             <Typography variant='body1'>Best Real Estate Deals, contact now</Typography>
