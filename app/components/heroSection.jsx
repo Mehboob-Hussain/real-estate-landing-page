@@ -7,7 +7,7 @@ const HeroSection = () => {
     <>
       <Box
         sx={{
-          position: 'relative', // Ensure relative positioning for z-index to work
+          position: 'relative', 
           backgroundImage: "url('/house5.jpg')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
@@ -20,11 +20,11 @@ const HeroSection = () => {
         <NavBar />
         <Box
           sx={{
-            position: 'relative', // Ensure relative positioning for z-index to work
-            zIndex: 1, // Set a higher z-index to ensure text appears above the background image
-            color: '#fff', // Text color
+            position: 'relative', 
+            zIndex: 1, 
+            color: '#fff', 
             textAlign: 'center',
-            padding: '20px', // Adjust padding as needed
+            padding: '20px', 
           }}
         >
           <Typography variant='h5'>Residential & Office Spaces</Typography>
@@ -34,7 +34,7 @@ const HeroSection = () => {
             love to live
           </Typography>
           <Typography variant='body1'>Best Real Estate Deals, contact now</Typography>
-          <Box sx={{ display: 'flex', gap: '1rem', marginTop: 4 }}>
+          <Box sx={{ display: 'flex', gap: '1rem', marginTop: 4,pl: { xs: 0, md: 8 } }}>
             <Button variant="contained" size="large" sx={{
               borderRadius: '20px',
               color: '#000',

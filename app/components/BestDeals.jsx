@@ -9,49 +9,50 @@ const BestDeals = () => {
             </div>
             <div className="deals w-full grid lg:grid-flow-col grid-rows-2 lg:grid-rows-2 gap-8">
                 <div className="deal relative col-span-2 lg:col-span-1 row-span-2 lg:row-span-1 h-96 lg:h-auto">
-                    <Image src="/house1.jpg" alt="House 1" layout="fill" className='rounded-xl object-cover' />
+                    <Image src="/house1.jpg" alt="House 1" layout="fill" className='rounded-xl object-cover image-overlay transform transition-transform duration-300 hover:scale-90' />
                     <div className='w-full absolute bottom-0 p-4 text-white bg-gradient-to-t from-black rounded-b-xl space-y-2'>
                         <h1 className='text-3xl font-bold'>PLACE</h1>
                         <p className='flex items-center space-x-2 text-sm'>Dubai,UAE</p>
                     </div>
                 </div>
+
                 <div className="deal relative col-span-1 lg:col-span-2 row-span-2 lg:row-span-1 h-96 lg:h-auto">
-                    <Image src="/house2.jpg" alt="House 2" layout="fill" className='rounded-xl object-cover' />
+                    <Image src="/house2.jpg" alt="House 2" layout="fill" className='rounded-xl object-cover image-overlay transform transition-transform duration-300 hover:scale-90' />
                     <div className='w-full absolute bottom-0 p-4 text-white bg-gradient-to-t from-black rounded-b-xl space-y-2'>
                         <h1 className='text-3xl font-bold'>PLACE</h1>
                         <p className='flex items-center space-x-2 text-sm'>Dubai,UAE</p>
                     </div>
                 </div>
                 <div className="deal relative col-span-1 lg:col-span-1 row-span-1 h-80">
-                    <Image src="/house3.jpg" alt="House 3" layout="fill" className='rounded-xl object-cover' />
+                    <Image src="/house3.jpg" alt="House 3" layout="fill" className='rounded-xl object-cover image-overlay transform transition-transform duration-300 hover:scale-90' />
                     <div className='w-full absolute bottom-0 p-4 text-white bg-gradient-to-t from-black rounded-b-xl space-y-2'>
                         <h1 className='text-3xl font-bold'>PLACE</h1>
                         <p className='flex items-center space-x-2 text-sm'>Dubai,UAE</p>
                     </div>
                 </div>
                 <div className="deal relative col-span-1 lg:col-span-1 row-span-1 h-80">
-                    <Image src="/house4.jpg" alt="House 4" layout="fill" className='rounded-xl object-cover' />
+                    <Image src="/house4.jpg" alt="House 4" layout="fill" className='rounded-xl object-cover image-overlay transform transition-transform duration-300 hover:scale-90' />
                     <div className='w-full absolute bottom-0 p-4 text-white bg-gradient-to-t from-black rounded-b-xl space-y-2'>
                         <h1 className='text-3xl font-bold'>PLACE</h1>
                         <p className='flex items-center space-x-2 text-sm'>Dubai,UAE</p>
                     </div>
                 </div>
                 <div className="deal relative col-span-1 lg:col-span-1 row-span-1 h-80">
-                    <Image src="/house5.jpg" alt="House 5" layout="fill" className='rounded-xl object-cover' />
+                    <Image src="/house5.jpg" alt="House 5" layout="fill" className='rounded-xl object-cover image-overlay transform transition-transform duration-300 hover:scale-90' />
                     <div className='w-full absolute bottom-0 p-4 text-white bg-gradient-to-t from-black rounded-b-xl space-y-2'>
                         <h1 className='text-3xl font-bold'>PLACE</h1>
                         <p className='flex items-center space-x-2 text-sm'>Dubai,UAE</p>
                     </div>
                 </div>
                 <div className="deal relative col-span-1 lg:col-span-1 row-span-1 h-80">
-                    <Image src="/house6.jpg" alt="House 6" layout="fill" className='rounded-xl object-cover' />
+                    <Image src="/house6.jpg" alt="House 6" layout="fill" className='rounded-xl object-cover image-overlay transform transition-transform duration-300 hover:scale-90' />
                     <div className='w-full absolute bottom-0 p-4 text-white bg-gradient-to-t from-black rounded-b-xl space-y-2'>
                         <h1 className='text-3xl font-bold'>PLACE</h1>
                         <p className='flex items-center space-x-2 text-sm'>Dubai,UAE</p>
                     </div>
                 </div>
-                <div className="deal relative col-span-1 lg:col-span-1 row-span-1 h-80">
-                    <Image src="/house6.jpg" alt="House 6" layout="fill" className='rounded-xl object-cover' />
+                <div className="deal relative col-span-1 lg:col-span-1 row-span-1 h-80 overflow-hidden">
+                    <Image src="/house6.jpg" alt="House 6" layout="fill" className='rounded-xl object-cover image-overlay transform transition-transform duration-300 hover:scale-90' />
                     <div className='w-full absolute bottom-0 p-4 text-white bg-gradient-to-t from-black rounded-b-xl space-y-2'>
                         <h1 className='text-3xl font-bold'>PLACE</h1>
                         <p className='flex items-center space-x-2 text-sm'>Dubai,UAE</p>

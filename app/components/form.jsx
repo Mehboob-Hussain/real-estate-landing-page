@@ -47,6 +47,31 @@ const QuickServiceForm = () => {
             alert("Please fill in all required fields correctly.");
         }
     };
+    const formFieldStyles = {
+        color: "white",
+        "& .MuiInputLabel-root": { color: "white" },
+        "& .MuiInputLabel-root.Mui-focused": { color: "white" },
+        "& .MuiInputBase-input": { color: "white" },
+        "& label.Mui-focused": { color: "white" },
+        "& .MuiOutlinedInput-root": {
+            "& fieldset": { borderColor: "white" },
+            "&:hover fieldset": { borderColor: "white" },
+            "&.Mui-focused fieldset": { borderColor: "gold" }
+        },
+        "& .MuiSelect-root": {
+            color: "white",
+            "&:hover": { color: "white" },
+            "&:focus": { color: "white" }
+        },
+        "& .MuiSelect-icon": {
+            color: "white"
+        },
+        "& .MuiMenu-paper": {
+            backgroundColor: "#333"
+        }
+    };
+
+
 
     return (
         <>
@@ -63,7 +88,7 @@ const QuickServiceForm = () => {
                     color: "white",
                 }}
             >
-                <Box sx={{ display: "flex", flexDirection:{xs:'column',md:'row'}, gap: "20px", alignItems: "center", width: "100%", maxWidth: "md" }}>
+                <Box sx={{ display: "flex", flexDirection: { xs: 'column', md: 'row' }, gap: "20px", alignItems: "center", width: "100%", maxWidth: "md" }}>
                     <Box sx={{ flex: 1 }}>
                         <Typography variant="h2">Get Quick Assistance</Typography>
                         <Typography variant="body1" sx={{ marginTop: "20px" }}>Fill in the form below to get quick assistance with your property needs.</Typography>
@@ -80,7 +105,7 @@ const QuickServiceForm = () => {
                                         value={formData.name}
                                         onChange={handleChange}
                                         required
-                                        sx={{ color: "white", "& label.Mui-focused": { color: "white" }, "& .MuiOutlinedInput-root": { "& fieldset": { borderColor: "white" }, "&.Mui-focused fieldset": { borderColor: "white" } } }}
+                                        sx={formFieldStyles}
                                     />
                                     <TextField
                                         id="phone"
@@ -91,7 +116,7 @@ const QuickServiceForm = () => {
                                         onChange={handleChange}
                                         required
                                         type="tel"
-                                        sx={{ color: "white", "& label.Mui-focused": { color: "white" }, "& .MuiOutlinedInput-root": { "& fieldset": { borderColor: "white" }, "&.Mui-focused fieldset": { borderColor: "white" } } }}
+                                        sx={formFieldStyles}
                                     />
                                     <TextField
                                         id="location"
@@ -100,7 +125,7 @@ const QuickServiceForm = () => {
                                         variant="outlined"
                                         value={formData.location}
                                         onChange={handleChange}
-                                        sx={{ color: "white", "& label.Mui-focused": { color: "white" }, "& .MuiOutlinedInput-root": { "& fieldset": { borderColor: "white" }, "&.Mui-focused fieldset": { borderColor: "white" } } }}
+                                        sx={formFieldStyles}
                                     />
                                     <TextField
                                         id="budget"
@@ -110,7 +135,7 @@ const QuickServiceForm = () => {
                                         value={formData.budget}
                                         onChange={handleChange}
                                         type="number"
-                                        sx={{ color: "white", "& label.Mui-focused": { color: "white" }, "& .MuiOutlinedInput-root": { "& fieldset": { borderColor: "white" }, "&.Mui-focused fieldset": { borderColor: "white" } } }}
+                                        sx={formFieldStyles}
                                     />
                                     <FormControl variant="outlined" required sx={{ color: "white", "& label.Mui-focused": { color: "white" }, "& .MuiOutlinedInput-root": { "& fieldset": { borderColor: "white" }, "&.Mui-focused fieldset": { borderColor: "white" } } }}>
                                         <InputLabel id="property-label">Property</InputLabel>
@@ -121,6 +146,8 @@ const QuickServiceForm = () => {
                                             label="Property"
                                             value={formData.property}
                                             onChange={handleChange}
+                                            sx={formFieldStyles}
+
                                         >
                                             <MenuItem value="house">House</MenuItem>
                                             <MenuItem value="apartment">Apartment</MenuItem>
