@@ -56,7 +56,7 @@ const QuickServiceForm = () => {
                     flexDirection: "column",
                     alignItems: "center",
                     textAlign: "center",
-                    backgroundImage: "url('/hero.png')",
+                    background: '#002147',
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                     padding: "50px",

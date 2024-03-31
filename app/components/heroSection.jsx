@@ -8,7 +8,7 @@ const HeroSection = () => {
       <Box
         sx={{
           position: 'relative', // Ensure relative positioning for z-index to work
-          backgroundImage: "url('/image.png')",
+          backgroundImage: "url('/house5.jpg')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           height: '100vh',
