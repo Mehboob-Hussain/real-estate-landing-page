@@ -63,7 +63,7 @@ const QuickServiceForm = () => {
                     color: "white",
                 }}
             >
-                <Box sx={{ display: "flex", flexDirection: "row", gap: "20px", alignItems: "center", width: "100%", maxWidth: "md" }}>
+                <Box sx={{ display: "flex", flexDirection:{xs:'column',md:'row'}, gap: "20px", alignItems: "center", width: "100%", maxWidth: "md" }}>
                     <Box sx={{ flex: 1 }}>
                         <Typography variant="h2">Get Quick Assistance</Typography>
                         <Typography variant="body1" sx={{ marginTop: "20px" }}>Fill in the form below to get quick assistance with your property needs.</Typography>

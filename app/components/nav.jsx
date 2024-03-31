@@ -25,6 +25,13 @@ const NavBar = () => {
             <AppBar position="fixed" sx={{ background: scrollPosition > 0 ? '#002147' : 'transparent', boxShadow: 'none', zIndex: 999 }}>
                 <Toolbar sx={{ display: 'flex', justifyContent: 'space-around' }}>
                     <Typography sx={{ fontStyle: 'italic', fontFamily: 'cursive' }} variant='h4' >Milestone Homes</Typography>
+                    {
+                        isMatch ? (
+                            <>
+                                <DrawarNav />
+                            </>
+
+                        ) : (
                     <Tabs textColor="inherent" sx={{ '& .MuiTab-root': { fontWeight: 800 }, '& .MuiTab-root:hover': { color: '#FFD700' } }} >
                         <Tab label="Home" />
                         <Tab
@@ -52,9 +59,11 @@ const NavBar = () => {
                             }
                         }}>Contact</Button>
                     </Tabs>
+                        )
+                    }
                 </Toolbar>
             </AppBar>
-            <Toolbar /> {/* Placeholder to prevent content from being overlapped by the fixed navbar */}
+            <Toolbar /> 
         </>
     )
 }
